@@ -3,9 +3,15 @@ using namespace std;
 int main()
 {
 	setlocale (LC_ALL, "Rus");
+	double a,b,c;
+	char n;
+	cout << "Первое число" << endl; cin >> a;
+	cout << "Второе число" << endl; cin >> b;
+	cout << "выберите выражение" << endl; cin >> n;
 	
-
-
+	
+	
+	
 	switch (n)
     {
         case '1':   c=a+b;
@@ -23,7 +29,7 @@ int main()
         default:    cout <<"Не верное значение."; 
     }
 
-
+	cout << "� езультат :" << c << endl;
 
 
 	system("pause");
