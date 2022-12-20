@@ -6,4 +6,3 @@ double Umn(double, double);
 double Del(double, double);
 
 #endif
-
