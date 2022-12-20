@@ -1,29 +1,30 @@
 #include <iostream>
+#include "func.h"
 using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 	double a, b;
 	char n;
-	cout << "ÐŸÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl; cin >> a;
-	cout << "Ð’Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl; cin >> b;
-	cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ" << endl; cin >> n;
+    cout << "Ââåäèòå ïåðâîå ÷èñëî" << endl; cin >> a;
+    cout << "Ââåäèòå âòîðîå ÷èñëî" << endl; cin >> b;
+    cout << "Ââåäèòå âûðàæåíèèå" << endl; cin >> n;
 	switch (n)
 	{
 	case '+':
-		cout << "ÐžÑ‚Ð²ÐµÑ‚: " << a + b << endl;
+        cout << "Îòâåò: " << Sum(a, b) << endl;
 		break;
 	case '-':
-		cout << "ÐžÑ‚Ð²ÐµÑ‚: " << a - b << endl;
+        cout << "Îòâåò: " << Vih(a, b) << endl;
 		break;
 	case '*':
-		cout << "ÐžÑ‚Ð²ÐµÑ‚: " << a * b << endl;
+        cout << "Îòâåò: " << Umn(a, b) << endl;
 		break;
 	case '/':
-		cout << "ÐžÑ‚Ð²ÐµÑ‚: " << a / b << endl;
+        cout << "Îòâåò: " << Del(a, b) << endl;
 		break;
 
-	default: cout << "ÐžÑˆÐ¸Ð±ÐºÐ°" << endl;
+    default: cout << "Îøèáêà" << endl;
 	}
 	system("pause");
 	return 0;
