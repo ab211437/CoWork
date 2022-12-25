@@ -3,6 +3,6 @@
 double Sum(double, double);
 double Vih(double, double);
 double Umn(double, double);
-double Del(double, double);
+double Del(double, double);//rtg
 
 #endif
